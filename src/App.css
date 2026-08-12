@@ -1,0 +1,6 @@
+/* App-level 样式（已被 index.css 覆盖大部分，此文件保留以便扩展） */
+.app {
+  min-height: 100vh;
+  background: var(--bg-warm);
+  padding-bottom: 40px;
+}
