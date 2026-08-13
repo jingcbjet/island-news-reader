@@ -10,11 +10,11 @@ import type { CardColor, TagColor, TagVariant } from 'animal-island-ui';
 // =====================================================
 export const pageData = {
   // 页面基础信息
-  title: '逼着胖东来关店，全国房东该彻底醒醒了',
-  subtitle: '于东来的公平账本与房东躺赚时代的终结',
-  date: '2026年8月12日',
-  headerIcon: '🏬',
-  footerIcons: '🏪 🏭 🚚 🛒',
+  title: '中国的婚姻变得更"严峻"了',
+  subtitle: '结婚率下滑、离婚率回升、新型婚恋模式兴起的三重变局',
+  date: '2026年8月13日',
+  headerIcon: '💍',
+  footerIcons: '💔 💍 👶 🏠',
 
   // 视觉特效开关
   enableTypewriter: true,        // 标题打字机效果
@@ -24,37 +24,47 @@ export const pageData = {
 
   // 页面顶部标签
   topTags: [
-    { text: '胖东来', color: 'app-red' as TagColor, variant: 'soft' as TagVariant },
-    { text: '房租博弈', color: 'app-orange' as TagColor, variant: 'soft' as TagVariant },
-    { text: '商业地产', color: 'app-blue' as TagColor, variant: 'soft' as TagVariant },
-    { text: '租约管理', color: 'app-teal' as TagColor, variant: 'soft' as TagVariant },
+    { text: '结婚率下滑', color: 'app-red' as TagColor, variant: 'soft' as TagVariant },
+    { text: '离婚率回升', color: 'app-orange' as TagColor, variant: 'soft' as TagVariant },
+    { text: '婚姻模式多元化', color: 'app-teal' as TagColor, variant: 'soft' as TagVariant },
+    { text: '人口危机', color: 'app-blue' as TagColor, variant: 'soft' as TagVariant },
   ],
 
   // 核心结论
   summaryTitle: '📌 核心结论',
-  summary: `胖东来关店的本质，是用财务底气、战略轮转和价值观三重对齐，做出的一次理性决策。真正让房东该醒醒的不是道德批判，而是一道简单的算术题：<strong>逼走租户之后，你的铺子还能租给谁？</strong>`,
+  summary: `2026年上半年，结婚登记同比下降<strong>7.46%</strong>，离婚登记同比上涨<strong>3.91%</strong>，离结比达<strong>42.2%</strong>——每100对新人结婚，同时有42对夫妻离婚。结婚率下滑与离婚率回升交织，加上无证婚姻、干婚等新型模式的兴起，共同勾勒出当下婚恋领域的全新面貌。`,
 
   // 原始文章（折叠内容）
-  originalTitle: '「逼着胖东来关店，全国房东该彻底醒醒了」全文',
-  originalArticle: `今天看到一个很有意思的新闻：胖东来宣布闭店，这次关的是许昌生活广场店。这家店2002年开业，面积2.3万平方米，是胖东来历史上第一家大型综合商场，也是胖东来体系里资历最老的一家店，甚至可以说是胖东来的发家老店。它不仅年盈利上亿，而且人流量并不少，以至于被很多外地人戏称为"6A级景区"。
+  originalTitle: '「中国的婚姻变得更严峻了」全文',
+  originalArticle: `8月12日，中国民政部网站发布了2026年二季度民政统计数据。统计显示，今年上半年全国结婚登记327.5万对，比去年同期减少26.4万对，跌幅达7.46%。
 
-那很多人就奇怪了：一家开了快25年，没有经营危机，没有客流问题，也没有什么负面丑闻的老店，为什么说关就关了？
+2013年，全国结婚登记数达到1346.9万对，创下历史峰值。此后从2014年开始逐年下降：2019年跌破1000万，2023年跌破800万，一路跌至683.5万。2025年因婚姻登记服务优化，同比反弹了11%，但今年上半年再次转负，同比下跌约7.5%。
 
-8月9日，于东来发了一段文字，解释了原因：2015年签约时，由于工作失误，租约合同没有统一签订，个别租户租金涨到无法想象的地步，完全脱离了公平原则。
+结婚这件事目前呈现出几个明显的新特征：
 
-问题在于，许昌生活广场这栋物业产权是分散在好几个小业主手里的，不是单一房东。胖东来本来应该走的流程是统一谈判，把整栋楼的租金锁定在一个公允的水平上。但当年负责这个项目租约签订的工作人员没有严格按照公司规定操作，签合同时没有统一打包、统一签订，而是零零散散地跟各个小业主分开谈的。这一下就埋了雷。续约时，个别房东看胖东来生意好，往死里涨租。
+第一个特征是晚婚现象越来越突出。2025年，25至29岁年龄段已取代20至24岁，成为结婚登记的主力人群；40岁以上登记结婚的比例也在明显上升。
 
-这次正好赶上租约到期，于东来的处理方式没有一丝犹豫：租约到期就是了断的时机。哪怕这家店一年能赚一个多亿，也坚决关掉。他自己原话讲的是："信仰和开心永远是第一位的。人生不要跟不同路的人打交道，否则会影响快乐。而幸福快乐才是一切的前提。"
+第二个特征是未婚比例持续攀升，且男女差距很大。2025年，30至34岁年龄段男性未婚比例高达28%，女性只有13%。
 
-再往外延伸一层：这件事其实也顺带戳破了中国商业地产这些年的一个老毛病。很多房东的定价逻辑压根不是按照房屋本身的市场价值或者所在区域的市场行情来定的，而是死死盯着租客的经营效益来定价。你生意差，房租照旧不降；你生意一旦好起来，对不起，翻倍、3倍甚至5倍地往上涨。
+这些数据背后藏着一门生意，也藏着一个更大的隐忧。先说生意：相亲机构七成营收来自30岁以上女性，但这个营收结构反过来又指导了他们的运营思路——一边安抚女生说不用焦虑，一边不动声色地放大年龄带来的紧迫感，借着这份焦虑推销高价会员。
 
-为什么国外的电商没有干掉实体？不是因为人家法律禁止电商，而是因为实体本身就活得挺滋润，不用给房东打工。在美国，装品牌的租售比——也就是租金占销售额的比重——普遍在8%到10%之间。而在中国呢，核心商圈的商铺租金能占到营收的20%到30%，有些黄金地段甚至能占到一半以上。
+再说隐忧：妇产科普遍界定22至25岁是女性生育的黄金阶段，35岁之后属于高龄产妇。30岁的女性进入婚姻，大概率只会生一胎，因为身体压力下很难再生二胎。
 
-胖东来这次关掉的不只是一家店，某种意义上，他关掉的是房东躺赚时代的最后一道门。`,
+而当结婚这条线走弱的同时，离婚那条线却在往上抬头。今年上半年，全国离婚登记138.3万对，比去年同期增加5.2万对，涨幅达3.91%。
+
+结婚和离婚放在一起，还能算出一个更直观的指标——离结比。今年上半年这个比例约为42.2%，去年同期是37.6%。换句话说，现在每100对新人登记结婚，同时就有42对夫妻在办离婚。
+
+离婚这件事正在和结婚一样，成为当今社会不可忽视的现象。30至49岁人群已成为离婚主力军。婚后6至14年为婚姻高危期，总占比超过52%。数据显示，感情基础薄弱、生活琐事以74.53%的压倒性比例成了离婚的头号原因。
+
+此外，离婚不仅是情感解体，更是一场关于孩子与金钱的精密计算。数据显示，2至8岁孩子的抚养权争夺最激烈，占比53.78%。房产是财产分割的核心，占比82.53%。
+
+离婚也催生了多门新生意：2025年离婚纠纷产生的法律服务市场规模达100至200亿元；婚纱照销毁、离婚跟拍、离婚蛋糕等仪式感消费悄然兴起；单身经济市场规模已超8万亿元，其中约9%是离婚群体贡献的。
+
+关于婚姻关系的另一种打开方式是无证婚姻——有些人表面结婚了，实际上法律层面未婚，婚宴照摆、婚纱照也拍，唯独删去领证这一手续。后浪研究所数据显示，超三分之一的年轻人认为领不领证都行。此外，干婚（法律上夫妻但生活中各过各的）在北上广深夫妻中超过25%处于此状态。`,
 
   // 底部来源
-  footerSource: '来源：sunriches 财经深度分析 · 2026年8月12日',
-  footerTag: '#胖东来 #商业地产 #房租博弈 #零售',
+  footerSource: '来源：sunriches 财经深度分析 · 2026年8月13日',
+  footerTag: '#结婚率 #离婚率 #婚姻模式 #单身经济 #人口危机',
   footerPowered: '🏝 Powered by Animal Island UI + React',
 };
 
@@ -126,146 +136,242 @@ export interface Section extends SectionExtras {
 
 export const sections: Section[] = [
 
-  // ── 1. 事件概览 ──
+  // ── 1. 核心数据概览 ──
   {
     type: 'stats',
-    title: '🏪 事件概览',
+    title: '📊 婚恋数据一览',
     cardColor: 'app-blue',
     cardPattern: 'default',
     titleColor: 'app-blue',
     items: [
-      { num: '2002', label: '开业年份', numColor: 'default', chip: { text: '22年历史', type: 'neutral' } },
-      { num: '2.3万㎡', label: '经营面积', numColor: 'default', chip: { text: '发家老店', type: 'neutral' } },
-      { num: '上亿', label: '年盈利水平', numColor: 'accent', chip: { text: '仍被关停', type: 'down' } },
-      { num: '25年', label: '租约到期', numColor: 'default', chip: { text: '永久关闭', type: 'down' } },
+      { num: '327.5万对', label: '上半年结婚登记', numColor: 'accent', chip: { text: '同比-7.46%', type: 'down' } },
+      { num: '138.3万对', label: '上半年离婚登记', numColor: 'app-red', chip: { text: '同比+3.91%', type: 'up' } },
+      { num: '42.2%', label: '离结比', numColor: 'app-orange', chip: { text: '每100对结婚·42对离婚', type: 'warn' } },
+      { num: '1346.9万对', label: '2013年历史峰值', numColor: 'default', chip: { text: '2023年跌至683.5万对', type: 'down' } },
     ],
-    insight: '被外地人戏称为<span class="up">"6A级景区"</span>的胖东来许昌生活广场店，8月9日宣布永久关闭。',
+    insight: '结婚率下滑与离婚率回升同步发生，离结比从10年前不可想象的水平一路走高。',
   },
 
-  // ── 2. 事件始末时间线 ──
+  // ── 2. 结婚登记10年下降时间线 ──
   {
     type: 'flow',
-    title: '📖 事件始末',
+    title: '📉 结婚登记数的10年下行线',
     cardColor: 'app-teal',
     cardPattern: 'default',
     titleColor: 'app-teal',
-    tags: ['许昌生活广场', '租约管理', '公平原则', '果断决策'],
+    tags: ['结婚率', '人口结构', '晚婚', '政策影响'],
     tagsColor: 'app-teal',
     items: [
       {
-        icon: '📋',
-        title: '2015年：租约签订失误',
-        desc: '工作人员没有按公司规定统一谈判、统一签订，而是<strong>零零散散与各小业主分开谈</strong>，为日后纠纷埋下隐患。',
+        icon: '🔺',
+        title: '2013年：历史峰值',
+        desc: '全国结婚登记<strong>1346.9万对</strong>，创下历史最高纪录。此后开始逐年下降，此后再未超越。',
+        color: 'blue',
+      },
+      {
+        icon: '📉',
+        title: '2019年：跌破千万',
+        desc: '从峰值到跌破1000万对用了6年。结婚登记数在下降通道中加速。',
         color: 'orange',
       },
       {
-        icon: '📈',
-        title: '续约期：房东大幅涨租',
-        desc: '个别房东看胖东来生意好，<strong>往死里涨租，完全脱离公平原则</strong>，远高于市场合理水平。',
-        color: 'red',
-      },
-      {
-        icon: '💰',
-        title: '合同锁死：中途解约需赔巨额违约金',
-        desc: '当年签的分散合同中途无法解约，胖东来面临<strong>继续干利润被蚕食、退出要赔违约金</strong>的两难困境。',
+        icon: '📉',
+        title: '2023年：跌破800万',
+        desc: '十年减半。全国结婚登记跌至<strong>683.5万对</strong>，仅为2013年峰值的约一半。',
         color: 'orange',
       },
       {
-        icon: '🔒',
-        title: '2026年8月：租约到期，直接关店',
-        desc: '于东来：<em>"信仰和开心永远是第一位，你涨租，我不租，一拍两散。"</em>',
+        icon: '↗️',
+        title: '2025年：短暂反弹',
+        desc: '因婚姻登记服务优化，同比<strong>反弹11%</strong>，算是暂时松了口气。',
         color: 'green',
       },
+      {
+        icon: '📉',
+        title: '2026上半年：再次转负',
+        desc: '同比下跌约<strong>7.5%</strong>，327.5万对。反弹昙花一现，下降趋势未改。',
+        color: 'red',
+      },
     ],
-    insight: '新乡大胖店曾有同样剧本：房东涨租3倍（800万→2400万），于东来第二天直接关店，后续房东空置整整10年。',
+    insight: '结婚登记数的10年轨迹：<span class="up">1346.9万对（2013）</span> → <span class="down">683.5万对（2023）</span> → 327.5万对（2026上半年），下降趋势不可逆。',
   },
 
-  // ── 3. 三层因素 ──
+  // ── 3. 婚姻结构新特征 ──
   {
-    type: 'list',
-    title: '💪 敢于关店的三层因素',
+    type: 'bars',
+    title: '💍 婚姻结构的三大转变',
     cardColor: 'app-orange',
     cardPattern: 'default',
     titleColor: 'app-orange',
     items: [
-      { text: '<strong>财务底气</strong>：账上41亿现金，零负债、不融资、不上市。单店年利润占比极小，关店动不了根本。', type: 'number' },
-      { text: '<strong>硬件迭代需求</strong>：24年老店，无地下停车场，通道狭窄。2029年前所有门店须达国际一流，落后空间不值得续命。', type: 'number' },
-      { text: '<strong>战略资源轮转</strong>：许昌梦之城、物流237、郑州东站超市、郑州二店红方项目——资源从"维持存量"转向"做增量"。', type: 'number' },
+      { icon: '👰', label: '25-29岁成为结婚主力', percent: 72, chip: { text: '取代20-24岁', type: 'neutral' }, meta: '晚婚化趋势明显' },
+      { icon: '👨', label: '30-34岁男性未婚比例', percent: 28, chip: { text: '同比+5个百分点', type: 'up' }, meta: '女性同龄仅13%未婚' },
+      { icon: '👩', label: '30-34岁女性未婚比例', percent: 13, chip: { text: '同比+2.8个百分点', type: 'up' }, meta: '男女差距持续扩大' },
+      { icon: '👴', label: '40岁以上登记结婚占比', percent: 45, chip: { text: '明显上升', type: 'neutral' }, meta: '晚婚已成普遍现象' },
     ],
+    insight: '晚婚化与未婚化同步深化，男女未婚比例差距从数据看极为悬殊——30-34岁男性未婚率是女性的<span class="up">2倍以上</span>。',
   },
 
-  // ── 4. 公平=核心资产 ──
+  // ── 4. 相亲市场的结构性困境 ──
   {
-    type: 'quote',
-    title: '⚖️ 公平是胖东来最核心的资产',
-    cardColor: 'app-yellow',
-    cardPattern: 'default',
-    titleColor: 'app-yellow',
-    content: `<blockquote style="border-left: 4px solid #f5c542; padding: 12px 16px; margin: 0; background: rgba(245,197,66,0.1); border-radius: 8px;">
-<p style="margin: 0 0 8px; font-size: 15px;">"无论钱多钱少，失去公平正义是底线。"</p>
-<p style="margin: 0; color: var(--text-light); font-size: 13px;">— 于东来</p>
-</blockquote>
-<p style="margin-top: 14px; font-size: 14px; line-height: 1.8;">对顾客无条件退货，对员工薪资比同行高<span class="up">70%</span>，严禁强制加班，对合作伙伴不欺不压——这套"公平"叙事是胖东来品牌的底层资产。<br><br>一旦为高租金妥协，叙事出现裂缝，长期损失<span class="up">远超</span>一家店一年一个亿的利润。<strong>公平是不可减值的资产，一旦减值一次，整张表都得重新估值。</strong></p>`,
-  },
-
-  // ── 5. 商业地产问题 ──
-  {
-    type: 'bars',
-    title: '🏢 中国商业地产的定价之殇',
-    cardColor: 'app-red',
-    cardPattern: 'default',
-    titleColor: 'app-red',
-    items: [
-      { icon: '📊', label: '国内核心商圈租售比', percent: 65, chip: { text: '高达20-30%', type: 'warn' }, meta: '部分黄金地段甚至超过50%' },
-      { icon: '🌍', label: '国外品牌租售比', percent: 27, chip: { text: '仅8-10%', type: 'up' }, meta: '美国零售行业平均水平' },
-      { icon: '🏚️', label: '二线城市核心商圈空置率', percent: 33, chip: { text: '超过30%', type: 'down' }, meta: '优质租户稀缺已成常态' },
-      { icon: '🏙️', label: '一线城市写字楼空置率', percent: 22, chip: { text: '普遍超20%', type: 'down' }, meta: '供需关系已根本性逆转' },
-    ],
-    insight: '房东盯着租户经营效益定价：你赚钱就涨租，你亏钱租金照旧。这套逻辑把房东变成了"二股东"，而非物业管理者。',
-  },
-
-  // ── 6. 高房租 vs 电商 ──
-  {
-    type: 'compare',
-    title: '⚔️ 压垮实体零售的真正元凶',
+    type: 'list',
+    title: '💬 大龄女性相亲市场的结构性困境',
     cardColor: 'app-pink',
     cardPattern: 'default',
     titleColor: 'app-pink',
-    oldTitle: '电商',
-    oldContent: `多数人认为电商抢走了实体客流。但电商只是提供了<strong>替代渠道</strong>，让消费者有了用脚投票的权利。`,
-    newTitle: '高房租',
-    newContent: `真正让商户咬牙切齿的是房东。<strong>没有电商，房东涨租更肆无忌惮；有了电商，商户至少有第二条路可走。</strong><br><br>商务部数据：租金占实体经营成本约<span class="up">三成</span>，涨幅常年是销售额增速的<span class="up">两倍</span>。餐饮行业百分之六七十都在给房东打工。`,
-    insight: '在美国，实体零售活的滋润是因为租售比合理（8-10%）；在中国核心商圈，房东把租户当成利润分成对象，而非物业契约方。',
+    items: [
+      { text: '<strong>市场结构错位</strong>：一线城市同龄未婚、条件均衡的男性基数本来就很小，再经过线上筛选，人数大幅缩水。', type: 'number' },
+      { text: '<strong>县城更极端</strong>：30岁以上女性回县城相亲，要么找条件比自己差的，要么接触的基本就是二婚群体，选择面比一线城市还窄。', type: 'number' },
+      { text: '<strong>商业逻辑悖论</strong>：相亲机构七成营收来自30岁以上女性——一边安抚说不用焦虑，一边放大年龄紧迫感推销高价会员，本质上消费的是婚恋焦虑。', type: 'number' },
+      { text: '<strong>最优解的讽刺</strong>：对大龄未婚女性来说，最优解是留在大城市尽早结婚——但这恰恰与晚婚大趋势相悖。', type: 'number' },
+    ],
   },
 
-  // ── 7. 对三类人的启发 ──
+  // ── 5. 结婚率下滑的连锁反应 ──
+  {
+    type: 'flow',
+    title: '⚠️ 结婚率下滑的连锁反应',
+    cardColor: 'app-red',
+    cardPattern: 'default',
+    titleColor: 'app-red',
+    tags: ['生育', '人口', '消费', '经济'],
+    tagsColor: 'app-red',
+    items: [
+      {
+        icon: '⏰',
+        title: '生育黄金期已过',
+        desc: '妇产科界定<strong>22-25岁</strong>为女性生育黄金阶段，35岁后属高龄产妇。30岁结婚，身体损耗和风险比20岁时明显更高。',
+        color: 'orange',
+      },
+      {
+        icon: '👶',
+        title: '一胎化趋势明显',
+        desc: '30岁女性进入婚姻，大概率<strong>只会生一胎</strong>，因为身体压力下很难再生二胎。',
+        color: 'orange',
+      },
+      {
+        icon: '📉',
+        title: '新生儿数量持续下降',
+        desc: '结婚率起不来，二胎三胎比例也会随适龄女性年龄结构变化而走低。',
+        color: 'red',
+      },
+      {
+        icon: '🏭',
+        title: '相关消费产业链承压',
+        desc: '与新生儿挂钩的整个消费产业链——奶粉、母婴、教育——都会跟着承压，这是系统性的连锁反应。',
+        color: 'red',
+      },
+    ],
+    insight: '结婚率→生育率→新生儿→相关消费的链条正在系统性走弱，且每一个环节的下滑都会反向强化下一个环节的困境。',
+  },
+
+  // ── 6. 结婚 vs 离婚 ──
+  {
+    type: 'compare',
+    title: '⚔️ 结婚曲线往下 vs 离婚曲线往上',
+    cardColor: 'app-blue',
+    cardPattern: 'default',
+    titleColor: 'app-blue',
+    oldTitle: '📉 结婚登记（下降通道）',
+    oldContent: `今年上半年<strong>327.5万对</strong>，同比减少<strong>26.4万对</strong>，跌幅<strong>7.46%</strong>。<br><br>2013年峰值1346.9万对→2023年683.5万对→2026上半年327.5万对，<span class="down">十年减半</span>。`,
+    newTitle: '📈 离婚登记（回升通道）',
+    newContent: `今年上半年<strong>138.3万对</strong>，同比增加<strong>5.2万对</strong>，涨幅<strong>3.91%</strong>。<br><br>2023年离婚冷静期后连续回升，<span class="up">结束2025年全年回落态势</span>，重新回到缓慢增长通道。真实离婚规模还包括法院调解判离的数量，实际更大。`,
+    insight: '结婚在降、离婚在升，这一降一升之间的剪刀差正在扩大。离结比从去年37.6%升至42.2%，即每100对新人结婚同时有42对离婚——这个数字10年前不可想象。',
+  },
+
+  // ── 7. 离婚人群画像 ──
+  {
+    type: 'bars',
+    title: '👥 离婚人群画像',
+    cardColor: 'app-orange',
+    cardPattern: 'default',
+    titleColor: 'app-orange',
+    items: [
+      { icon: '👨', label: '30-49岁离婚主力', percent: 55, chip: { text: '75后至95前', type: 'neutral' }, meta: '80后尤为突出，房贷、孩子、事业三重压力叠加' },
+      { icon: '👴', label: '50岁以上银发离婚占比', percent: 15, chip: { text: '2025年达15.3%', type: 'up' }, meta: '每6.5对诉讼离婚中有1对是携手半辈子的夫妻' },
+      { icon: '💔', label: '婚后6-14年高危期', percent: 52, chip: { text: '占比超52%', type: 'warn' }, meta: '10年以上婚龄离婚占比还在逐年提高' },
+      { icon: '⚖️', label: '诉讼离婚（vs 民政登记）', percent: 38, chip: { text: '未纳入统计', type: 'neutral' }, meta: '实际离婚规模比民政数据更大' },
+    ],
+    insight: '<span class="up">75后至95前</span>是离婚绝对主力，<span class="up">银发族离婚</span>也在崛起——婚姻高危期集中在婚后6至14年，压垮婚姻的往往不是狗血大戏，而是鸡毛蒜皮。',
+  },
+
+  // ── 8. 离婚原因分析 ──
+  {
+    type: 'bars',
+    title: '💔 离婚原因：生活琐事才是头号杀手',
+    cardColor: 'app-pink',
+    cardPattern: 'default',
+    titleColor: 'app-pink',
+    items: [
+      { icon: '🧹', label: '感情基础薄弱/生活琐事', percent: 75, chip: { text: '74.53%', type: 'warn' }, meta: '压倒性第一原因，远超戏剧性冲突' },
+      { icon: '💔', label: '出轨/重婚/同居', percent: 21, chip: { text: '21.07%', type: 'down' }, meta: '并非主流，比想象中低很多' },
+      { icon: '👊', label: '家暴', percent: 18, chip: { text: '17.92%', type: 'down' }, meta: '同样是配角，不是主因' },
+    ],
+    insight: '戏剧性的出轨、家暴反而是配角，<span class="up">日常琐事磨掉了感情</span>才是婚姻的头号杀手——这颠覆了很多人对离婚原因的直觉判断。',
+  },
+
+  // ── 9. 离婚的财务博弈 ──
+  {
+    type: 'bars',
+    title: '💰 离婚的财务精算',
+    cardColor: 'app-teal',
+    cardPattern: 'default',
+    titleColor: 'app-teal',
+    items: [
+      { icon: '🏠', label: '财产分割：房产', percent: 83, chip: { text: '82.53%', type: 'warn' }, meta: '财产分割绝对核心，其次是车辆50.56%、存款48.70%' },
+      { icon: '👶', label: '2-8岁子女抚养权争夺', percent: 54, chip: { text: '53.78%', type: 'neutral' }, meta: '孩子最依赖父母、教育投入开始加码的阶段' },
+      { icon: '💵', label: '抚养费区间', percent: 59, chip: { text: '2000-4999元/月', type: 'neutral' }, meta: '58.55%集中在此区间，反映大多数家庭经济现实' },
+      { icon: '⚖️', label: '家务劳动补偿获法院支持', percent: 58, chip: { text: '2025年达57.58%', type: 'up' }, meta: '三年从33%跃升至58%，但金额仍微薄' },
+    ],
+    insight: '离婚财产分割的核心是房产，抚养权争夺集中在2-8岁孩子阶段。家务劳动的价值正被看见——法院支持率三年翻倍，但补偿金额依然微薄。',
+  },
+
+  // ── 10. 离婚催生的新经济 ──
   {
     type: 'list',
-    title: '💡 对不同对象的启发',
+    title: '💼 离婚催生的新经济业态',
     cardColor: 'app-green',
     cardPattern: 'default',
     titleColor: 'app-green',
     items: [
-      { text: '<strong>零售企业</strong>：租约管理是命脉，不是文牍工作。警惕沉没成本续命思维——到期节点恰恰是止损和资源重新配置的最佳窗口。', type: 'number' },
-      { text: '<strong>商业地产方</strong>：主力店是整个商圈的心脏。对着心脏加价，是最短视的博弈方式。健康的租约结构应该是共生分成，而不是地段勒索。', type: 'number' },
-      { text: '<strong>所有决策者</strong>：胖东来真正可贵之处，是把价值观、财务底气、战略轮转<strong>在同一时间点对齐了</strong>。三者缺一，这才是最难复制的地方。', type: 'number' },
+      { text: '<strong>法律服务市场</strong>：2025年规模达<strong>100-200亿元</strong>。离婚案受理费超1000元的比例从5.75%飙升至48.7%，增长超8倍。', type: 'number' },
+      { text: '<strong>仪式感消费</strong>：婚纱照销毁（河北廊坊按重量收费，3公斤内59元）、离婚跟拍（500-1800元）、离婚蛋糕、离婚花艺等全套散伙服务。', type: 'number' },
+      { text: '<strong>单身经济</strong>：市场规模超<strong>8万亿元</strong>，离婚群体贡献约9%。小户型住房、一人食餐饮、宠物经济、迷你家电是拥趸。', type: 'number' },
+      { text: '<strong>二手流通</strong>：家具、家电、黄金首饰通过二手平台快速流通，催生针对离婚家庭的二手交易中介服务。', type: 'number' },
     ],
   },
 
-  // ── 8. 金句 ──
+  // ── 11. 新型婚姻模式 ──
+  {
+    type: 'list',
+    title: '💍 新型婚姻模式：年轻人的多元选择',
+    cardColor: 'app-blue',
+    cardPattern: 'default',
+    titleColor: 'app-blue',
+    items: [
+      { text: '<strong>无证婚姻</strong>：只办婚礼不领证。所有流程一个不落，唯独删去领证——为了避免财产牵扯、逃避生育压力、感情出问题离婚麻烦。超1/3年轻人认为领不领证都行。', type: 'number' },
+      { text: '<strong>干婚</strong>：法律上还是夫妻，但生活中各过各的，情感和经济都高度独立。某婚恋机构数据显示，<strong>超25%的北上广深夫妻处于干婚状态</strong>，其中70%坦言是为了孩子、财产、社会形象在硬撑。', type: 'number' },
+      { text: '<strong>搭子式婚姻、通勤婚姻</strong>等也在年轻群体中蔓延，但这些新型模式的普及程度还远未成为主流婚恋模式。', type: 'number' },
+    ],
+  },
+
+  // ── 12. 总结金句 ──
   {
     type: 'quote',
-    title: '💬 金句',
-    cardColor: 'app-teal',
+    title: '💬 结语',
+    cardColor: 'app-yellow',
     cardPattern: 'default',
-    titleColor: 'app-teal',
-    content: `<blockquote style="border-left: 4px solid #4ecdc4; padding: 12px 16px; margin: 0; background: rgba(78,205,196,0.1); border-radius: 8px;">
-<p style="margin: 0 0 8px; font-size: 15px;">"你有涨价的自由，我有<span style="color:#e74c3c">不租</span>的自由。账算不拢，那就一拍两散。"</p>
-<p style="margin: 0; color: var(--text-light); font-size: 13px;">— 于东来</p>
+    titleColor: 'app-yellow',
+    content: `<blockquote style="border-left: 4px solid #f5c542; padding: 12px 16px; margin: 0; background: rgba(245,197,66,0.1); border-radius: 8px;">
+<p style="margin: 0 0 8px; font-size: 15px;">"结婚不等于上了岸，离婚也不意味着翻了船，<br>不婚更不是掉了队。"</p>
+<p style="margin: 0; color: var(--text-light); font-size: 13px;">— sunriches</p>
 </blockquote>
 <p style="margin-top: 14px; font-size: 14px; line-height: 1.8; text-align: center; color: var(--text-main);">
-🏝 胖东来这次关掉的不只是一家店<br>
-<strong>他关掉的是房东躺赚时代的最后一道门。</strong>
+🏝 结婚率下滑、离婚率回升、婚姻模式多元化<br>
+<strong>三条线交织，共同勾勒婚恋领域全新面貌。</strong><br><br>
+好的社会从不是硬逼着人凑合过一辈子，<br>
+而是在结婚、离婚、不婚的选择题里，<br>
+允许每个人能选得更坦然一些。
 </p>`,
   },
 
