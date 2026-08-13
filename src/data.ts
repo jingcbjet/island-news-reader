@@ -10,8 +10,8 @@ import type { CardColor, TagColor, TagVariant } from 'animal-island-ui';
 // =====================================================
 export const pageData = {
   // 页面基础信息
-  title: '中国的婚姻变得更"严峻"了',
-  subtitle: '结婚率下滑、离婚率回升、新型婚恋模式兴起的三重变局',
+  title: '结婚率跌10年、离婚率三连涨，婚姻正在巨变',
+  subtitle: '结婚登记创十年新低、离结比超42%，婚恋市场的结构性变局',
   date: '2026年8月13日',
   headerIcon: '💍',
   footerIcons: '💔 💍 👶 🏠',
