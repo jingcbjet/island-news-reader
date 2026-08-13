@@ -3,8 +3,6 @@ import {
   Card,
   Title,
   Tag,
-  Button,
-  Progress,
   Divider,
   Tooltip,
   Footer,
@@ -110,7 +108,6 @@ function renderSection(section: Section, idx: number) {
     cardProps.color = section.cardColor;
   }
 
-  const tooltipVariant = pageData.enableIslandTooltip ? 'island' : 'default';
   const safeTitle = section.title || '';
   const safeContent = section.content || '';
 
@@ -160,7 +157,6 @@ function renderSection(section: Section, idx: number) {
             {section.insight && (
               <Tooltip
                 title={section.insight.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 60) + '...'}
-                variant={tooltipVariant as any}
                 placement="top"
                 bordered
               >
@@ -228,7 +224,6 @@ function renderSection(section: Section, idx: number) {
 // ──────────────────────────────
 function App() {
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [originalOpen, setOriginalOpen] = useState(false);
   const [typewriterKey, setTypewriterKey] = useState(0);
 
   useEffect(() => {
@@ -248,7 +243,6 @@ function App() {
     }
   }, [scrollProgress]);
 
-  const tooltipVariant = pageData.enableIslandTooltip ? 'island' : 'default';
 
   return (
     <div className="app">
@@ -285,20 +279,6 @@ function App() {
       {/* 波浪分隔线（库自带 wave-yellow 装饰） */}
       <Divider type="wave-yellow" />
 
-      {/* ── 现金储备进度条（保留旧版特色） ── */}
-      <section className="section">
-        {renderTitle('📊 现金储备水位', 'app-orange')}
-        <Card color="app-yellow" pattern={pageData.enablePattern ? 'default' : undefined} className="island-card">
-          <Tooltip
-            title="现金储备从历史高位回落到 3655 亿美元，仍处历史第二高水平"
-            variant={tooltipVariant as any}
-            placement="top"
-            bordered
-          >
-            <Progress percent={92} />
-          </Tooltip>
-        </Card>
-      </section>
 
       {/* ── 核心结论 ── */}
       <div className="section">
@@ -308,34 +288,6 @@ function App() {
         </div>
       </div>
 
-      {/* ── 原始文章（用原生 details 元素实现折叠，因为库里的 Collapse 是 Q&A 不是面板） ── */}
-      <section className="section">
-        {renderTitle('📖 原始文章', 'app-pink')}
-        <Card color="app-pink" pattern={pageData.enablePattern ? 'default' : undefined} className="island-card original-card">
-          <div style={{
-            display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '12px',
-          }}>
-            <span style={{ fontSize: '13px', color: 'var(--text-light)' }}>
-              📎 点击下方按钮展开/收起原文完整内容
-            </span>
-            <Button
-              type={originalOpen ? 'default' : 'primary'}
-              size="middle"
-              onClick={() => setOriginalOpen(v => !v)}
-            >
-              {originalOpen ? '🔼 收起原文' : '🔽 展开原文'}
-            </Button>
-          </div>
-          {originalOpen && (
-            <div className="original-content">
-              <h4 style={{ marginTop: 0, color: 'var(--text-main)' }}>
-                {pageData.originalTitle}
-              </h4>
-              <pre className="card-content">{pageData.originalArticle}</pre>
-            </div>
-          )}
-        </Card>
-      </section>
 
       {/* ── Footer（库自带树根装饰） ── */}
       {pageData.enableDecorFooter && (
