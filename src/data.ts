@@ -35,7 +35,7 @@ export const pageData = {
   summary: `2026年上半年，结婚登记同比下降<strong>7.46%</strong>，离婚登记同比上涨<strong>3.91%</strong>，离结比达<strong>42.2%</strong>——每100对新人结婚，同时有42对夫妻离婚。结婚率下滑与离婚率回升交织，加上无证婚姻、干婚等新型模式的兴起，共同勾勒出当下婚恋领域的全新面貌。`,
 
   // 底部来源
-  footerSource: '来源：sunriches 财经深度分析 · 2026年8月13日',
+  footerSource: '来源：财经深度分析 · 2026年8月13日',
   footerTag: '#结婚率 #离婚率 #婚姻模式 #单身经济 #人口危机',
   footerPowered: '🏝 Powered by Animal Island UI + React',
 };
