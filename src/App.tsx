@@ -10,7 +10,7 @@ import {
   Footer,
   Typewriter,
 } from 'animal-island-ui';
-import { pageData, type Section, type StatItem, type BarItem, type FlowItem, type ListItem } from './data';
+import { pageData, sections, type Section, type StatItem, type BarItem, type FlowItem, type ListItem } from './data';
 import './App.css';
 
 // ──────────────────────────────
@@ -21,7 +21,7 @@ function renderStatItem(item: StatItem) {
     <div className="stat-card" key={item.label}>
       <span
         className={`stat-num ${item.numColor === 'accent2' ? 'up' : item.numColor === 'accent' ? 'warn' : ''}`}
-        style={item.numSize ? { fontSize: item.numSize } : undefined}
+        style={item.numSize ? { fontSize: (item as any).numSize } : undefined}
       >
         {item.num}
       </span>
@@ -111,14 +111,16 @@ function renderSection(section: Section, idx: number) {
   }
 
   const tooltipVariant = pageData.enableIslandTooltip ? 'island' : 'default';
+  const safeTitle = section.title || '';
+  const safeContent = section.content || '';
 
   switch (section.type) {
     case 'stats':
       return (
         <section className="section" key={idx}>
-          {renderTitle(section.title, section.titleColor)}
+          {safeTitle && renderTitle(safeTitle, section.titleColor)}
           <Card {...cardProps}>
-            <div className="stat-grid">{section.items.map(renderStatItem)}</div>
+            <div className="stat-grid">{(section.items as StatItem[]).map(renderStatItem)}</div>
             {section.insight && (
               <div className="insight" dangerouslySetInnerHTML={{ __html: section.insight }} />
             )}
@@ -129,9 +131,9 @@ function renderSection(section: Section, idx: number) {
     case 'bars':
       return (
         <section className="section" key={idx}>
-          {renderTitle(section.title, section.titleColor)}
+          {safeTitle && renderTitle(safeTitle, section.titleColor)}
           <Card {...cardProps}>
-            {section.items.map(renderBarItem)}
+            {(section.items as BarItem[]).map(renderBarItem)}
           </Card>
         </section>
       );
@@ -139,9 +141,9 @@ function renderSection(section: Section, idx: number) {
     case 'flow':
       return (
         <section className="section" key={idx}>
-          {renderTitle(section.title, section.titleColor)}
+          {safeTitle && renderTitle(safeTitle, section.titleColor)}
           <Card {...cardProps}>
-            <div className="flow">{section.items.map(renderFlowItem)}</div>
+            <div className="flow">{(section.items as FlowItem[]).map((item, i) => renderFlowItem(item, i))}</div>
             {section.tags && (
               <div className="tag-row" style={{ marginTop: '14px' }}>
                 {section.tags.map((t, i) => (
@@ -172,9 +174,9 @@ function renderSection(section: Section, idx: number) {
     case 'list':
       return (
         <section className="section" key={idx}>
-          {renderTitle(section.title, section.titleColor)}
+          {safeTitle && renderTitle(safeTitle, section.titleColor)}
           <Card {...cardProps}>
-            {section.items.map(renderListItem)}
+            {(section.items as ListItem[]).map((item, i) => renderListItem(item, i))}
             {section.insight && (
               <div className="insight" style={{ marginTop: '14px' }} dangerouslySetInnerHTML={{ __html: section.insight }} />
             )}
@@ -185,18 +187,18 @@ function renderSection(section: Section, idx: number) {
     case 'compare':
       return (
         <section className="section" key={idx}>
-          {renderTitle(section.title, section.titleColor)}
+          {safeTitle && renderTitle(safeTitle, section.titleColor)}
           <Card {...cardProps}>
             <div className="contrast">
               <div className="contrast-item old">
                 <Tag color="app-orange" variant="outlined" size="small">旧</Tag>
                 <h4 style={{ marginTop: '8px' }}>{section.oldTitle}</h4>
-                <p dangerouslySetInnerHTML={{ __html: section.oldContent }} />
+                <p dangerouslySetInnerHTML={{ __html: section.oldContent || '' }} />
               </div>
               <div className="contrast-item new">
                 <Tag color="app-green" variant="outlined" size="small">新</Tag>
                 <h4 style={{ marginTop: '8px' }}>{section.newTitle}</h4>
-                <p dangerouslySetInnerHTML={{ __html: section.newContent }} />
+                <p dangerouslySetInnerHTML={{ __html: section.newContent || '' }} />
               </div>
             </div>
             {section.insight && (
@@ -209,9 +211,9 @@ function renderSection(section: Section, idx: number) {
     case 'quote':
       return (
         <section className="section" key={idx}>
-          {section.title && renderTitle(section.title, section.titleColor)}
+          {safeTitle && renderTitle(safeTitle, section.titleColor)}
           <Card {...cardProps}>
-            <div className="insight" dangerouslySetInnerHTML={{ __html: section.content }} />
+            <div className="insight" dangerouslySetInnerHTML={{ __html: safeContent }} />
           </Card>
         </section>
       );
@@ -278,7 +280,7 @@ function App() {
       </header>
 
       {/* ── 板块 ── */}
-      {pageData.sections.map((s, i) => renderSection(s, i))}
+      {sections.map((s: Section, i: number) => renderSection(s, i))}
 
       {/* 波浪分隔线（库自带 wave-yellow 装饰） */}
       <Divider type="wave-yellow" />
